@@ -1,0 +1,16 @@
+{
+  "tasks": {
+    "start": "deno run --allow-net --allow-read index.tsx",
+    "island": "deno bundle ./islands/index.ts ./islands/bundle.js"
+  },
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "dom.asynciterable",
+      "deno.ns"
+    ],
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment"
+  }
+}
